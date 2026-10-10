@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Terms of Service for RichNote by MOONBACK USA INC.">
+  <meta name="theme-color" content="#173d36">
+  <title>Terms of Service — RichNote</title>
+  <style>
+    :root {
+      --ink: #173d36;
+      --ink-soft: #47635d;
+      --paper: #f7f4ed;
+      --paper-bright: #fffdf8;
+      --line: #d8d5ca;
+      --accent: #e96f45;
+      --accent-soft: #f7ded0;
+      --shadow: 0 24px 70px rgba(23, 61, 54, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 8% 4%, rgba(233, 111, 69, 0.12), transparent 24rem),
+        linear-gradient(90deg, transparent 49.9%, rgba(23, 61, 54, 0.035) 50%, transparent 50.1%),
+        var(--paper);
+      font-family: Charter, "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+      font-size: 17px;
+      line-height: 1.72;
+    }
+
+    a {
+      color: inherit;
+      text-decoration-color: var(--accent);
+      text-decoration-thickness: 2px;
+      text-underline-offset: 3px;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    .site-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 28px 0;
+      font-family: Avenir, "Trebuchet MS", sans-serif;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      text-decoration: none;
+    }
+
+    .brand-mark {
+      display: grid;
+      width: 34px;
+      height: 34px;
+      place-items: center;
+      color: var(--paper-bright);
+      background: var(--ink);
+      border-radius: 50% 50% 50% 16%;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      font-style: italic;
+    }
+
+    .header-links {
+      display: flex;
+      gap: 22px;
+      color: var(--ink-soft);
+      font-size: 14px;
+    }
+
+    main {
+      width: min(1120px, calc(100% - 40px));
+      margin: 16px auto 72px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.35fr) minmax(260px, 0.65fr);
+      gap: 64px;
+      align-items: end;
+      padding: 72px 0 64px;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .eyebrow {
+      margin: 0 0 18px;
+      color: var(--accent);
+      font-family: Avenir, "Trebuchet MS", sans-serif;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 760px;
+      margin: 0;
+      font-size: clamp(48px, 8vw, 92px);
+      font-weight: 500;
+      letter-spacing: -0.055em;
+      line-height: 0.94;
+    }
+
+    .hero-note {
+      margin: 0;
+      color: var(--ink-soft);
+      font-size: 16px;
+    }
+
+    .effective-date {
+      display: block;
+      margin-top: 18px;
+      color: var(--ink);
+      font-family: Avenir, "Trebuchet MS", sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+
+    .document {
+      display: grid;
+      grid-template-columns: 250px minmax(0, 720px);
+      gap: 72px;
+      justify-content: center;
+      padding-top: 64px;
+    }
+
+    .contents {
+      position: sticky;
+      top: 24px;
+      align-self: start;
+      padding: 24px;
+      background: rgba(255, 253, 248, 0.74);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(12px);
+    }
+
+    .contents h2 {
+      margin: 0 0 16px;
+      font-family: Avenir, "Trebuchet MS", sans-serif;
+      font-size: 12px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .contents ol {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      counter-reset: contents;
+    }
+
+    .contents li {
+      counter-increment: contents;
+      margin: 0 0 9px;
+    }
+
+    .contents a {
+      display: grid;
+      grid-template-columns: 24px 1fr;
+      color: var(--ink-soft);
+      font-family: Avenir, "Trebuchet MS", sans-serif;
+      font-size: 13px;
+      line-height: 1.45;
+      text-decoration: none;
+    }
+
+    .contents a::before {
+      content: counter(contents, decimal-leading-zero);
+      color: var(--accent);
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+    }
+
+    .contents a:hover {
+      color: var(--ink);
+    }
+
+    .terms-copy > p:first-child {
+      margin-top: 0;
+      font-size: 21px;
+      line-height: 1.6;
+    }
+
+    section {
+      padding: 38px 0 14px;
+      border-top: 1px solid var(--line);
+    }
+
+    section:first-of-type {
+      border-top: 0;
+    }
+
+    section h2 {
+      display: grid;
+      grid-template-columns: 54px 1fr;
+      gap: 10px;
+      align-items: baseline;
+      margin: 0 0 18px;
+      font-size: 28px;
+      font-weight: 500;
+      letter-spacing: -0.025em;
+      line-height: 1.2;
+    }
+
+    .section-number {
+      color: var(--accent);
+      font-family: Avenir, "Trebuchet MS", sans-serif;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+    }
+
+    p,
+    ul {
+      margin: 0 0 18px;
+    }
+
+    ul {
+      padding-left: 1.25em;
+    }
+
+    li {
+      margin-bottom: 8px;
+      padding-left: 6px;
+    }
+
+    strong {
+      font-weight: 700;
+    }
+
+    .callout {
+      margin: 28px 0;
+      padding: 24px 26px;
+      background: var(--accent-soft);
+      border-left: 4px solid var(--accent);
+      font-size: 16px;
+    }
+
+    .site-footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 32px 0 48px;
+      color: var(--ink-soft);
+      border-top: 1px solid var(--line);
+      font-family: Avenir, "Trebuchet MS", sans-serif;
+      font-size: 13px;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 18px;
+    }
+
+    @media (max-width: 820px) {
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        padding: 52px 0 42px;
+      }
+
+      .document {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding-top: 40px;
+      }
+
+      .contents {
+        position: static;
+        box-shadow: none;
+      }
+    }
+
+    @media (max-width: 540px) {
+      body {
+        font-size: 16px;
+      }
+
+      .site-header,
+      main,
+      .site-footer {
+        width: min(100% - 28px, 1120px);
+      }
+
+      .header-links a:first-child {
+        display: none;
+      }
+
+      h1 {
+        font-size: 48px;
+      }
+
+      section h2 {
+        grid-template-columns: 42px 1fr;
+        font-size: 24px;
+      }
+
+      .site-footer {
+        flex-direction: column;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+    }
+
+    @media print {
+      body {
+        background: #fff;
+      }
+
+      .site-header,
+      .contents,
+      .site-footer {
+        display: none;
+      }
+
+      main {
+        width: 100%;
+        margin: 0;
+      }
+
+      .hero,
+      .document {
+        display: block;
+        padding: 24px 0;
+      }
+
+      section {
+        break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="RichNote privacy policy">
+      <span class="brand-mark" aria-hidden="true">R</span>
+      <span>RichNote</span>
+    </a>
+    <nav class="header-links" aria-label="Legal and support links">
+      <a href="./">Privacy</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </header>
+
+  <main>
+    <header class="hero">
+      <div>
+        <p class="eyebrow">Legal · RichNote</p>
+        <h1>Terms of Service</h1>
+      </div>
+      <p class="hero-note">
+        The agreement governing your access to RichNote, including its reading,
+        synchronization, transcription, artificial intelligence, and subscription services.
+        <span class="effective-date">Effective October 10, 2026</span>
+      </p>
+    </header>
+
+    <div class="document">
+      <aside class="contents" aria-label="Table of contents">
+        <h2>In this document</h2>
+        <ol>
+          <li><a href="#acceptance">Acceptance</a></li>
+          <li><a href="#eligibility">Eligibility and accounts</a></li>
+          <li><a href="#service">The service</a></li>
+          <li><a href="#subscriptions">Subscriptions and billing</a></li>
+          <li><a href="#content">Your content</a></li>
+          <li><a href="#acceptable-use">Acceptable use</a></li>
+          <li><a href="#ai">AI features</a></li>
+          <li><a href="#privacy">Privacy</a></li>
+          <li><a href="#intellectual-property">Intellectual property</a></li>
+          <li><a href="#third-parties">Third-party services</a></li>
+          <li><a href="#termination">Termination</a></li>
+          <li><a href="#disclaimers">Disclaimers</a></li>
+          <li><a href="#liability">Limitation of liability</a></li>
+          <li><a href="#changes">Changes</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ol>
+      </aside>
+
+      <article class="terms-copy">
+        <p>
+          These Terms of Service (the “Terms”) are an agreement between you and
+          <strong>MOONBACK USA INC</strong> (“MOONBACK,” “we,” “us,” or “our”). They apply
+          to the RichNote mobile application, websites, connected reading devices, and related
+          services (collectively, the “Service”).
+        </p>
+
+        <section id="acceptance">
+          <h2><span class="section-number">01</span>Acceptance of these Terms</h2>
+          <p>
+            By creating an account, purchasing a subscription, or otherwise accessing or using
+            the Service, you agree to these Terms and our <a href="./">Privacy Policy</a>. If you
+            do not agree, do not use the Service. If you use the Service on behalf of an
+            organization, you represent that you have authority to bind that organization.
+          </p>
+        </section>
+
+        <section id="eligibility">
+          <h2><span class="section-number">02</span>Eligibility and accounts</h2>
+          <p>
+            You must be at least 13 years old to use the Service. If you are under the age of
+            majority where you live, a parent or legal guardian must review and agree to these
+            Terms on your behalf. You are responsible for providing accurate account information,
+            safeguarding your credentials, and all activity under your account. Notify us promptly
+            if you suspect unauthorized access.
+          </p>
+        </section>
+
+        <section id="service">
+          <h2><span class="section-number">03</span>The Service</h2>
+          <p>
+            RichNote provides tools for reading, organizing books and notes, synchronizing content,
+            recording and transcribing audio, interacting with AI-assisted features, and connecting
+            to supported reading devices. Available features, usage limits, storage allowances, and
+            platform compatibility may vary by plan, region, device, and app version.
+          </p>
+          <p>
+            We may improve, update, add, or remove features over time. We will use reasonable care
+            when making material changes, but we do not guarantee that every feature will always be
+            available or that the Service will be uninterrupted or error-free.
+          </p>
+        </section>
+
+        <section id="subscriptions">
+          <h2><span class="section-number">04</span>Subscriptions, renewal, and billing</h2>
+          <p>
+            Some features require a paid subscription. Prices, billing intervals, included features,
+            and any trial terms are displayed before purchase. Applicable taxes may be added.
+          </p>
+          <div class="callout">
+            <strong>Automatic renewal.</strong> Unless you cancel before the end of the current
+            billing period, your subscription automatically renews for the same billing interval,
+            and the payment method associated with your purchase will be charged at the then-current
+            price, subject to applicable notice requirements.
+          </div>
+          <ul>
+            <li>
+              <strong>Where billing occurs.</strong> Mobile purchases may be processed by Apple App
+              Store or Google Play. Web purchases may be processed by Stripe and managed through
+              RevenueCat. The payment provider's terms also apply to your transaction.
+            </li>
+            <li>
+              <strong>Cancellation.</strong> Cancel through the same platform or account portal used
+              to purchase. Cancellation stops future renewal; paid access generally continues until
+              the end of the current billing period unless applicable law or the provider's rules
+              require otherwise.
+            </li>
+            <li>
+              <strong>Refunds.</strong> Except where required by law, fees are non-refundable. Refund
+              requests are handled according to the policies of the platform or payment provider
+              that processed the purchase.
+            </li>
+            <li>
+              <strong>Price changes.</strong> We may change subscription prices. We will provide any
+              notice required by applicable law or the applicable platform before the new price takes
+              effect for a renewal.
+            </li>
+          </ul>
+        </section>
+
+        <section id="content">
+          <h2><span class="section-number">05</span>Your content</h2>
+          <p>
+            You retain ownership of books, notes, recordings, highlights, prompts, and other content
+            you submit to the Service (“User Content”). You grant us a limited, worldwide license to
+            host, copy, transmit, process, and display User Content only as reasonably necessary to
+            operate, secure, and improve the Service and provide the features you request.
+          </p>
+          <p>
+            You represent that you have the rights and permissions needed to upload and process User
+            Content. You are responsible for obtaining any legally required consent before recording
+            other people or submitting their personal information or communications.
+          </p>
+        </section>
+
+        <section id="acceptable-use">
+          <h2><span class="section-number">06</span>Acceptable use</h2>
+          <p>You may not use the Service to:</p>
+          <ul>
+            <li>violate any law or infringe another person's rights;</li>
+            <li>upload malware or interfere with the security or operation of the Service;</li>
+            <li>attempt to gain unauthorized access to accounts, systems, or data;</li>
+            <li>harass, exploit, deceive, or harm another person;</li>
+            <li>scrape, reverse engineer, or resell the Service except where the law permits it; or</li>
+            <li>use automated means in a manner that places an unreasonable load on the Service.</li>
+          </ul>
+        </section>
+
+        <section id="ai">
+          <h2><span class="section-number">07</span>AI-assisted features</h2>
+          <p>
+            RichNote may use artificial intelligence to generate summaries, transcripts, answers,
+            recommendations, or other output. AI output may be incomplete, inaccurate, or unsuitable
+            for your circumstances. You should review important output before relying on or sharing it.
+            AI features are not a substitute for professional medical, legal, financial, or other
+            expert advice.
+          </p>
+          <p>
+            You remain responsible for your prompts, User Content, use of AI output, and compliance
+            with applicable laws and third-party rights.
+          </p>
+        </section>
+
+        <section id="privacy">
+          <h2><span class="section-number">08</span>Privacy and data</h2>
+          <p>
+            Our <a href="./">Privacy Policy</a> explains what information we collect, how we use and
+            protect it, and the choices available to you. By using the Service, you acknowledge our
+            data practices as described there. Some features require processing content through
+            third-party infrastructure or AI service providers.
+          </p>
+        </section>
+
+        <section id="intellectual-property">
+          <h2><span class="section-number">09</span>Our intellectual property</h2>
+          <p>
+            The Service—including its software, design, branding, documentation, and non-user
+            content—is owned by MOONBACK or its licensors and is protected by intellectual property
+            laws. Subject to these Terms, we grant you a limited, personal, non-exclusive,
+            non-transferable, revocable license to use the Service for its intended purpose.
+          </p>
+        </section>
+
+        <section id="third-parties">
+          <h2><span class="section-number">10</span>Third-party services</h2>
+          <p>
+            The Service may integrate with third-party platforms, stores, payment processors,
+            authentication providers, AI providers, and devices. We do not control those services,
+            and their separate terms and privacy policies apply. We are not responsible for a
+            third-party service's content, availability, or actions to the extent permitted by law.
+          </p>
+        </section>
+
+        <section id="termination">
+          <h2><span class="section-number">11</span>Suspension and termination</h2>
+          <p>
+            You may stop using the Service at any time. You may request account deletion through the
+            available in-app controls or by contacting us. We may suspend or terminate access when
+            reasonably necessary to protect users or the Service, comply with law, address nonpayment,
+            or respond to a material violation of these Terms. Provisions that by their nature should
+            survive termination will remain in effect.
+          </p>
+        </section>
+
+        <section id="disclaimers">
+          <h2><span class="section-number">12</span>Disclaimers</h2>
+          <p>
+            To the maximum extent permitted by law, the Service is provided “as is” and “as available.”
+            We disclaim all implied warranties, including merchantability, fitness for a particular
+            purpose, and non-infringement. We do not warrant that the Service or AI-generated output
+            will be accurate, secure, uninterrupted, or free of harmful components. Some jurisdictions
+            do not allow certain disclaimers, so parts of this section may not apply to you.
+          </p>
+        </section>
+
+        <section id="liability">
+          <h2><span class="section-number">13</span>Limitation of liability</h2>
+          <p>
+            To the maximum extent permitted by law, MOONBACK and its directors, employees, affiliates,
+            and providers will not be liable for indirect, incidental, special, consequential, exemplary,
+            or punitive damages, or for loss of profits, data, goodwill, or business opportunity arising
+            from or related to the Service. Our total liability for claims relating to the Service will
+            not exceed the greater of US$100 or the amount you paid us for the Service during the twelve
+            months before the event giving rise to the claim. These limits do not apply where prohibited
+            by law.
+          </p>
+        </section>
+
+        <section id="changes">
+          <h2><span class="section-number">14</span>Changes to these Terms</h2>
+          <p>
+            We may update these Terms as the Service or applicable requirements change. We will update
+            the effective date and provide additional notice when required. Continuing to use the Service
+            after updated Terms become effective means you accept the revised Terms. If you do not agree,
+            you should stop using the Service and cancel any active subscription.
+          </p>
+        </section>
+
+        <section id="contact">
+          <h2><span class="section-number">15</span>Contact us</h2>
+          <p>
+            Questions about these Terms may be sent to:<br>
+            <strong>MOONBACK USA INC</strong><br>
+            <a href="mailto:richnote@moonbackai.com">richnote@moonbackai.com</a>
+          </p>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <span>© 2026 MOONBACK USA INC. All rights reserved.</span>
+    <span class="footer-links">
+      <a href="./">Privacy Policy</a>
+      <a href="support.html">Support</a>
+    </span>
+  </footer>
+</body>
+</html>
